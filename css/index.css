@@ -1,0 +1,713 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+body {
+  height: 12000px;
+  background: #f5f5f5;
+}
+
+a {
+  color: #999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff0036;
+}
+
+.top {
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #f2f2f2;
+}
+
+.map_site {
+  width: 1280px;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+  position: relative;
+}
+
+.left>a,
+.right>a {
+  margin-left: 15px;
+  transition: all .3s ease;
+}
+
+.header {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.search {
+  position: relative;
+  width: 630px;
+  margin: 35px auto;
+  z-index: 999999;
+}
+
+#key {
+  width: 490px;
+  height: 35px;
+  border: 2px solid #ff0036;
+  font-size: 16px;
+}
+
+#key:focus {
+  outline: none;
+}
+
+#sumbit {
+  width: 130px;
+  height: 39px;
+  background-color: #ff0036;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bolder;
+  position: relative;
+  top: 2px;
+  left: -4px;
+  cursor: pointer;
+}
+
+#sumbit:focus {
+  outline: none;
+}
+
+.search_bottom {
+  margin-top: 3px;
+}
+
+.search_bottom li,
+b {
+  float: left;
+  list-style: none;
+  font-size: 14px;
+  padding-left: 6px;
+}
+
+.red {
+  color: #ff0036;
+}
+
+.banner {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.menu_type {
+  width: 200px;
+  height: 36px;
+  background-color: #ff0036;
+  line-height: 36px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+.menu_tabs_contnet {
+  width: 200px;
+  height: 500px;
+  list-style: none;
+  background: #000000;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+#banner_container {
+  position: relative;
+  left: 15px;
+  top: -3px;
+  z-index: 99;
+}
+
+.banner {
+  position: relative;
+  top: -110px;
+
+}
+
+.menu_tabs_contnet {
+  float: left;
+}
+
+.menu_tabs_contnet>li {
+  height: 31px;
+  line-height: 31px;
+  color: #ffffff;
+  font-size: 14px;
+  padding-left: 40px;
+  background: url('../img/商品列表.png') no-repeat;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.show {
+  position: relative;
+  width: 860px;
+  height: 500px;
+  float: left;
+}
+
+.carrousel {
+  width: 100%;
+  position: absolute;
+  top: 200px;
+  left: 15px;
+  height: 500px;
+  background: #e8e8e8;
+}
+
+.carrousel_main {
+  width: 1280px;
+  margin: 0 auto;
+  list-style: none;
+  overflow: hidden;
+  height: 500px;
+}
+
+.carrousel_main>li>img {
+  width: 1230px;
+}
+
+.carrousel_main_navbar {
+  position: absolute;
+  bottom: 15px;
+  left: 45%;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.carrousel_main_navbar>li {
+  background: #000;
+  width: 25px;
+  height: 5px;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 5px;
+  cursor: pointer;
+  opacity: .3;
+  cursor: pointer;
+}
+
+.carrousel_main_navbar>li.active {
+  background: #fff;
+  opacity: .6;
+}
+
+.famous {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.famous>.col1 {
+  width: 234px;
+  height: 370px;
+  float: left;
+  margin-right: 13px;
+  background-color: #fff;
+  position: relative;
+}
+
+.cn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  line-height: 54px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+.en {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 10px;
+  line-height: 57px;
+  height: 44px;
+}
+
+.more {
+  position: absolute;
+  right: 14px;
+  top: 0;
+  width: 42px;
+  height: 54px;
+  line-height: 54px;
+  z-index: 99;
+  background: url(../img/jiantou.png);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 14px;
+  font-size: 16px;
+  color: #666;
+  overflow: hidden;
+}
+
+.col1>img {
+  height: 316px;
+}
+
+.col2 {
+  position: relative;
+  float: left;
+  display: block;
+  width: 485px;
+  height: 370px;
+  margin-right: 13px;
+  background-color: #fff;
+}
+
+.col3 {
+  position: relative;
+  float: left;
+  display: block;
+  width: 485px;
+  height: 370px;
+  margin-right: 13px;
+  background-color: #fff;
+}
+
+.famous img {
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.famous img:hover {
+  opacity: .8;
+}
+
+.brand_list {
+  list-style: none;
+  width: 1280px;
+  margin: 20px auto;
+  clear: both;
+  position: relative;
+  top: 40px;
+}
+
+.brand_item {
+  width: 122px;
+  height: 108px;
+  margin-right: 1px;
+  margin-bottom: 1px;
+  float: left;
+  position: relative;
+}
+
+.brand-img {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  line-height: 108px;
+  background-color: #fff;
+}
+
+.brand-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.coupon {
+  color: #fff;
+  text-align: center;
+  line-height: 90px;
+  height: 60px;
+  text-align: center;
+}
+
+.brand_title {
+  display: block;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+  text-align: center;
+  line-height: 90px;
+}
+
+.enter {
+  text-align: center;
+  height: 32px;
+  color: #000
+}
+
+.enter>span {
+  display: inline-block;
+  color: #fff;
+  width: 63px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #FF0036;
+  border-radius: 9px;
+}
+
+.tmall_market {
+  width: 1280px;
+  clear: both;
+  position: relative;
+  margin: 20px auto;
+  top: 60px;
+}
+
+.tmall_market_header {
+  display: inline-block;
+
+  vertical-align: middle;
+
+  font-size: 18px;
+
+  color: #000;
+
+  height: 45px;
+
+}
+
+.left_logo {
+  vertical-align: middle;
+  font-family: "Microsoft YaHei";
+  display: inline-block;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.right_title {
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  margin: 5px 10px;
+  font-size: 14px;
+  border: none;
+  color: #000;
+  position: relative;
+  left: 405px;
+}
+
+.right_title>a {
+  margin-left: 15px;
+  color: #000;
+  font-size: 14px;
+}
+
+.right_title>a:hover {
+  text-decoration: underline;
+}
+
+.tmall_market_bd {
+  height: 618px;
+}
+
+.bd_inner_left {
+  width: 235px;
+  float: left;
+}
+
+.bd_inner_right {
+  float: left;
+  width: 992px;
+}
+
+.right_tabs {
+  float: left;
+  width: 462px;
+  height: 282px;
+  margin: 10px 24px 10px 10px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);
+}
+
+.tab_head>li {
+  float: left;
+  color: #000;
+  height: 57px;
+  line-height: 57px;
+  width: 191px;
+  cursor: pointer;
+  padding: 0 20px;
+  text-align: center;
+  vertical-align: middle;
+  list-style: none;
+
+}
+
+.tab_head>li>p {
+  line-height: 57px;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.tab_head>li.active {
+  color: #ffffff;
+  background: #00b262;
+}
+
+.market_item {
+  width: 235px;
+  height: 301px;
+  margin-left: 13px;
+  margin-top: 10px;
+  text-align: center;
+  float: left;
+  display: block;
+  /* border-bottom: 15px solid #f5f5f5; */
+  position: relative;
+  background-color: #fff;
+  transition: all .4s ease;
+}
+
+.market_item:hover {
+  outline: 1px solid red;
+}
+
+.market_item:hover img {
+  opacity: .7;
+  transition: opacity .4s ease;
+}
+
+.market_item_wrap {
+  width: 234px;
+  height: 300px;
+  border: 1px solid #fff;
+}
+
+.market_item_wrap>img {
+  width: 185px;
+  height: 185px;
+}
+
+.market_item_wrap_title {
+  width: 135px;
+  height: 40px;
+  font-size: 14px;
+  color: #333333;
+  line-height: 20px;
+  overflow: hidden;
+  margin: 8px auto;
+}
+
+.price {
+  font-size: 18px;
+  color: #FF0036;
+  line-height: 18px;
+  margin: 10px auto;
+}
+
+.tmall_GJ {
+  width: 1280px;
+  margin: 100px auto;
+  height: 620px;
+}
+
+.right_title.right {
+  position: relative;
+  left: 775px;
+  top: 3px;
+}
+
+.bd_GJ_inner_right {
+  float: left;
+  width: 992px;
+}
+
+.tmall_MLRS {
+  width: 1280px;
+  height: 630px;
+  margin: 35px auto;
+}
+
+.man {
+  display: block;
+  width: 1620px;
+  margin: 0 auto;
+}
+
+.mark_color {
+  display: inline-block;
+
+  background-color: #333333;
+
+  width: 5px;
+  margin-top: -4px;
+  height: 18px;
+  font-size: 24px;
+  line-height: 18px;
+
+  vertical-align: middle;
+}
+
+.fool_name {
+  display: inline;
+  font-size: 18px;
+  color: #000;
+}
+
+.english {
+  display: inline-block;
+
+  font-size: 14px;
+
+  color: #000;
+
+  margin-left: 10px;
+
+  line-height: 24px;
+
+  height: 18px;
+}
+
+.tmall_CDKW {
+  width: 1280px;
+  height: 620px;
+  margin: 60px auto;
+}
+
+.tmall_JJSH {
+  width: 1280px;
+  height: 620px;
+  margin: 60px auto;
+}
+
+.tmall_HOME {
+  width: 1280px;
+  height: 620px;
+  margin: 60px auto;
+}
+
+.tmall_HWCX {
+  width: 1280px;
+  height: 620px;
+  margin: 60px auto;
+}
+
+.nav_bar {
+  position: fixed;
+  top: 20%;
+  z-index: 999;
+  left: 15px;
+  display: none;
+}
+
+.nav_header {
+  background: #FF0036;
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.nav_bar_item {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1px;
+  background-color: #666;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.item_name {
+  line-height: 12px;
+  width: 24px;
+  height: 28px;
+  margin: 6px auto;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.bd_inner_left>img {
+  transition: all ease .3s;
+  cursor: pointer;
+}
+
+.bd_inner_left>img:hover {
+  opacity: .8;
+}
+
+.inner_col {
+  top:  5px;
+  left:  200px;
+  position: absolute;
+}
+
+.inner_col img {
+  position: relative;
+  top: -4px;
+  width: 100px;
+  height: 30px;
+}
+
+.inner_col a {
+  height: 35px;
+  cursor: pointer;
+  float: left;
+  padding: 0 8px;
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+  color: #333333;
+  letter-spacing: normal;
+  word-spacing: normal;
+  position: relative;
+  transition: all ease .3s;
+}
+.inner_col a:hover{
+  color: #ff0036;
+}
+
+.right_nav_fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+/* .tmall_CNXH{
+  width: 1280px;
+  height: 620px;
+  margin: 60px auto;
+}
+.tmall_CNXH_tit{
+
+} */
